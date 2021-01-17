@@ -13,4 +13,4 @@ services:
     volumes:
       - ../introduction_to_ml_with_python:/home/jovyan/work
     # 最後にjupyterLabに接続するためのコマンドを実行する。
-    command: start-notebook.sh --NotebookApp.token=''
+    command: start-notebook.sh --NotebookApp.token='' --NotebookApp.password='' --NotebookApp.disable_check_xsrf=True
