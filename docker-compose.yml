@@ -9,7 +9,6 @@ services:
     environment:
       - JUPYTER_ENABLE_LAB=yes
     # ボリューム(データの永続化の場所)の設定(ホスト:コンテナ)
-    # ホスト内のworkディレクトリとコンテナ内の/home/jovyan/workディレクトリが紐づいているイメージ
     volumes:
       - ../introduction_to_ml_with_python:/home/jovyan/work
     # 最後にjupyterLabに接続するためのコマンドを実行する。
